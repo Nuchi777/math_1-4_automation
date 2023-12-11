@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
 import data
-from locators.login_page_locators import MainPageLocators
+from locators.main_page_locators import MainPageLocators
 
 
 @pytest.fixture
@@ -24,4 +24,6 @@ def login(driver):
     driver.find_element(*MainPageLocators.LOGIN_FIELD).send_keys(data.UserData.USER_LOGIN)
     driver.find_element(*MainPageLocators.PASSWORD_FIELD).send_keys(data.UserData.USER_PASSWORD)
     driver.find_element(*MainPageLocators.LOGIN_BUTTON).click()
+    WebDriverWait(driver, timeout=10).until(EC.visibility_of_element_located(MainPageLocators.MAIN_BANNER))
     return driver
+

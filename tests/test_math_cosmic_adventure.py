@@ -1,10 +1,11 @@
 import time
 
+from pages.cosmic_adventure_lesson_explore_planet_page import CosmicAdventureLessonExplorePlanetPage
 from pages.cosmic_adventure_lesson_start_page import CosmicAdventureLessonStartPage
 from data import UrlsCosmicAdventure
 
 
-class TestMathCosmicAdventureStart:
+class TestMathCosmicAdventure:
 
     def test_math_cosmic_adventure_start(self, driver, login):
         lesson_start = CosmicAdventureLessonStartPage(driver)
@@ -39,6 +40,11 @@ class TestMathCosmicAdventureStart:
         lesson_start.click_on_button_with_number_10_step_2()
         lesson_start.click_on_next_button()
         lesson_start.check_table_marathon_is_displayed()
+
+    def test_math_cosmic_adventure_explore_planet(self, driver, login):
+        lesson_explore_planet = CosmicAdventureLessonExplorePlanetPage(driver)
+        lesson_explore_planet.open(UrlsCosmicAdventure.EXPLORE_PLANET)
+        lesson_explore_planet.click_on_button_key_3_fill_input_3()
 
 
 

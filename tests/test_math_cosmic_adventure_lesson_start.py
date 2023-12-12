@@ -38,7 +38,7 @@ class TestMathCosmicAdventureStart:
         lesson_start.click_on_button_with_number_8_step_2()
         lesson_start.click_on_button_with_number_10_step_2()
         lesson_start.click_on_next_button()
-        # lesson_start.check_button_decide_further_is_displayed()
+        lesson_start.check_table_marathon_is_displayed()
 
 
 

@@ -1,5 +1,4 @@
 from selenium.webdriver.common.by import By
-
 from locators.main_page_locators import MainPageLocators
 from pages.base_page import BasePage
 
@@ -36,6 +35,8 @@ class CosmicAdventureLessonStartPage(BasePage):
     PROGRESS_BAR_BUTTON_1_5_4 = (By.XPATH, '//div[@width="140.14705882352942"]')
     PROGRESS_BAR_PORTHOLE_1 = (By.XPATH, '//div[@width="304.8529411764706"]')
     PROGRESS_BAR_PORTHOLE_2 = (By.XPATH, '//div[@width="328.38235294117646"]')
+
+    PC = (By.XPATH, '//div[@class="styles__StyledPrimaryContainer-sc-wl03bp-0 jjDOnQ"]')
 
     def click_on_button_start(self):
         self.element_is_visible(self.BUTTON_START).click()
@@ -84,15 +85,15 @@ class CosmicAdventureLessonStartPage(BasePage):
 
     def click_on_first_porthole_3_times(self):
         self.element_is_visible(self.PROGRESS_BAR_PORTHOLE_1)
-        self.element_is_clickable(self.PORTHOLE).click()
-        self.element_is_clickable(self.PORTHOLE).click()
-        self.element_is_clickable(self.PORTHOLE).click()
+        self.element_is_visible(self.PORTHOLE).click()
+        self.element_is_visible(self.PORTHOLE).click()
+        self.element_is_visible(self.PORTHOLE).click()
 
     def click_on_second_porthole_3_times(self):
         self.element_is_visible(self.PROGRESS_BAR_PORTHOLE_2)
-        self.element_is_clickable(self.PORTHOLE).click()
-        self.element_is_clickable(self.PORTHOLE).click()
-        self.element_is_clickable(self.PORTHOLE).click()
+        self.element_is_visible(self.PORTHOLE).click()
+        self.element_is_visible(self.PORTHOLE).click()
+        self.element_is_visible(self.PORTHOLE).click()
 
     def click_on_button_with_number_2_step_1(self):
         self.element_is_visible(self.BUTTON_2_STEP_1).click()
@@ -124,5 +125,5 @@ class CosmicAdventureLessonStartPage(BasePage):
     def click_on_button_with_number_10_step_2(self):
         self.element_is_visible(self.BUTTON_10_STEP_2).click()
 
-    def check_button_decide_further_is_displayed(self):
-        assert self.element_is_visible(MainPageLocators.BUTTON_DECIDE_FURTHER).is_displayed()
+    def check_table_marathon_is_displayed(self):
+        assert self.element_is_visible(MainPageLocators.TABLE_MARATHON).is_displayed()

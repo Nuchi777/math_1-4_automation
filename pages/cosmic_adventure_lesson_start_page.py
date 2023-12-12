@@ -1,3 +1,5 @@
+import time
+
 from selenium.webdriver.common.by import By
 from locators.main_page_locators import MainPageLocators
 from pages.base_page import BasePage
@@ -18,7 +20,7 @@ class CosmicAdventureLessonStartPage(BasePage):
     BUTTON_6_3_8 = (By.XPATH, '//div[@data-component-name="picBlockItem_1"]')
     BUTTON_1_5_4 = (By.XPATH, '//div[@data-component-name="picBlockItem_2"]')
     POINT_ABOVE_STONE = (By.XPATH, '//div[@class="styles__StyledPicBlockContent-sc-1j9mray-1 dQTgGg choiceImage state_active"]')
-    POINT_BELOW_STONE = (By.XPATH, '(//div[@class="styles__StyledPicBlockContent-sc-1j9mray-1 kxuuiu choiceImage state_active"])')
+    POINT_BELOW_STONE = (By.XPATH, '//div[@class="styles__StyledPicBlockContent-sc-1j9mray-1 kxuuiu choiceImage state_active"]')
     POINT_BETWEEN_STONE = (By.XPATH, '(//div[contains(@class, "styles__StyledPicBlockContent-sc")])[11]')
     POINT_BELOW_TRIANG_AND_ABOVE_ROUND_STONE = (By.XPATH, '(//div[contains(@class, "styles__StyledPicBlockContent-sc")])[21]')
     PORTHOLE = (By.XPATH, '//div[@id="containerScene"]')
@@ -35,6 +37,7 @@ class CosmicAdventureLessonStartPage(BasePage):
     PROGRESS_BAR_BUTTON_1_5_4 = (By.XPATH, '//div[@width="140.14705882352942"]')
     PROGRESS_BAR_PORTHOLE_1 = (By.XPATH, '//div[@width="304.8529411764706"]')
     PROGRESS_BAR_PORTHOLE_2 = (By.XPATH, '//div[@width="328.38235294117646"]')
+
 
     PC = (By.XPATH, '//div[@class="styles__StyledPrimaryContainer-sc-wl03bp-0 jjDOnQ"]')
 
@@ -85,6 +88,7 @@ class CosmicAdventureLessonStartPage(BasePage):
 
     def click_on_first_porthole_3_times(self):
         self.element_is_visible(self.PROGRESS_BAR_PORTHOLE_1)
+        time.sleep(1)
         self.element_is_visible(self.PORTHOLE).click()
         self.element_is_visible(self.PORTHOLE).click()
         self.element_is_visible(self.PORTHOLE).click()

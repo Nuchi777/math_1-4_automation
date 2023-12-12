@@ -25,8 +25,22 @@ class TestMathCosmicAdventureStart:
         lesson_start.click_on_point_between_stone()
         lesson_start.click_on_point_below_triangular_and_above_round_stone()
         lesson_start.click_on_next_button()
-        lesson_start.click_on_porthole_3_times()
-        lesson_start.click_on_porthole_3_times()
+        lesson_start.click_on_first_porthole_3_times()
+        lesson_start.click_on_second_porthole_3_times()
+        lesson_start.click_on_button_with_number_2_step_1()
+        lesson_start.click_on_button_with_number_3_step_1()
+        lesson_start.click_on_button_with_number_4_step_1()
+        lesson_start.click_on_button_with_number_5_step_1()
+        lesson_start.click_on_button_with_number_6_step_1()
+        lesson_start.click_on_button_with_number_2_step_2()
+        lesson_start.click_on_button_with_number_4_step_2()
+        lesson_start.click_on_button_with_number_6_step_2()
+        lesson_start.click_on_button_with_number_8_step_2()
+        lesson_start.click_on_button_with_number_10_step_2()
+        lesson_start.click_on_next_button()
+        # lesson_start.check_button_decide_further_is_displayed()
+
+
 
 
 

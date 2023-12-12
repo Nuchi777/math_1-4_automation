@@ -1,6 +1,7 @@
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
+from locators.main_page_locators import MainPageLocators
 
 
 class BasePage:
@@ -40,4 +41,10 @@ class BasePage:
 
     def element_is_selected(self, locator):
         return WebDriverWait(self.driver, timeout=60).until(EC.element_located_to_be_selected(locator))
+
+    def get_current_title(self):
+        WebDriverWait(self.driver, timeout=60).until(EC.visibility_of_element_located(MainPageLocators.MAIN_BANNER))
+        return self.driver.title()
+
+
 

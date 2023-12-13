@@ -1,6 +1,7 @@
 import time
 
 from pages.cosmic_adventure_lesson_explore_planet_page import CosmicAdventureLessonExplorePlanetPage
+from pages.cosmic_adventure_lesson_fix_rocket_page import CosmicAdventureLessonFixRocketPage
 from pages.cosmic_adventure_lesson_start_page import CosmicAdventureLessonStartPage
 from data import UrlsCosmicAdventure
 
@@ -63,8 +64,11 @@ class TestMathCosmicAdventure:
         lesson_explore_planet.check_table_marathon_is_displayed()
 
     def test_math_cosmic_adventure_fix_rocket(self, driver, login):
-        lesson_explore_planet = CosmicAdventureLessonExplorePlanetPage(driver)
-        lesson_explore_planet.open(UrlsCosmicAdventure.EXPLORE_PLANET)
+        lesson_fix_rocket = CosmicAdventureLessonFixRocketPage(driver)
+        lesson_fix_rocket.open(UrlsCosmicAdventure.FIX_ROCKET)
+        lesson_fix_rocket.click_on_button_play()
+        time.sleep(3)
+
 
 
 

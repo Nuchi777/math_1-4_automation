@@ -45,6 +45,27 @@ class TestMathCosmicAdventure:
         lesson_explore_planet = CosmicAdventureLessonExplorePlanetPage(driver)
         lesson_explore_planet.open(UrlsCosmicAdventure.EXPLORE_PLANET)
         lesson_explore_planet.click_on_button_key_3_fill_input_3()
+        lesson_explore_planet.click_on_button_key_2_fill_input_2()
+        lesson_explore_planet.click_on_button_key_4_fill_input_4()
+        lesson_explore_planet.click_on_number_seven()
+        lesson_explore_planet.click_on_number_one()
+        lesson_explore_planet.click_on_number_five()
+        lesson_explore_planet.click_on_next_button()
+        lesson_explore_planet.click_on_cifryts()
+        lesson_explore_planet.click_on_button_key_5_fill_input()
+        lesson_explore_planet.click_on_pic_block_button_number_3()
+        lesson_explore_planet.click_on_pic_block_button_number_4()
+        lesson_explore_planet.click_on_next_button()
+        lesson_explore_planet.drag_wrapper_heat_to_first_position()
+        lesson_explore_planet.drag_wrapper_tail_to_last_position()
+        lesson_explore_planet.click_on_done_button()
+        lesson_explore_planet.click_on_next_button()
+        lesson_explore_planet.check_table_marathon_is_displayed()
+
+    def test_math_cosmic_adventure_fix_rocket(self, driver, login):
+        lesson_explore_planet = CosmicAdventureLessonExplorePlanetPage(driver)
+        lesson_explore_planet.open(UrlsCosmicAdventure.EXPLORE_PLANET)
+
 
 
 

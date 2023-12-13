@@ -38,9 +38,6 @@ class CosmicAdventureLessonStartPage(BasePage):
     PROGRESS_BAR_PORTHOLE_1 = (By.XPATH, '//div[@width="304.8529411764706"]')
     PROGRESS_BAR_PORTHOLE_2 = (By.XPATH, '//div[@width="328.38235294117646"]')
 
-
-    PC = (By.XPATH, '//div[@class="styles__StyledPrimaryContainer-sc-wl03bp-0 jjDOnQ"]')
-
     def click_on_button_start(self):
         self.element_is_visible(self.BUTTON_START).click()
 

@@ -24,6 +24,6 @@ def login(driver):
     driver.find_element(*MainPageLocators.LOGIN_FIELD).send_keys(data.UserData.USER_LOGIN)
     driver.find_element(*MainPageLocators.PASSWORD_FIELD).send_keys(data.UserData.USER_PASSWORD)
     driver.find_element(*MainPageLocators.LOGIN_BUTTON).click()
-    WebDriverWait(driver, timeout=10).until(EC.visibility_of_element_located(MainPageLocators.MAIN_BANNER))
+    WebDriverWait(driver, timeout=10).until(EC.visibility_of_element_located(MainPageLocators.HEADBAR_LOGO))
     return driver
 

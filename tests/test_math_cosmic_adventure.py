@@ -2,6 +2,7 @@ import time
 
 from pages.cosmic_adventure_lesson_explore_planet_page import CosmicAdventureLessonExplorePlanetPage
 from pages.cosmic_adventure_lesson_fix_rocket_page import CosmicAdventureLessonFixRocketPage
+from pages.cosmic_adventure_lesson_save_knysh_page import CosmicAdventureLessonSaveKnyshPage
 from pages.cosmic_adventure_lesson_start_page import CosmicAdventureLessonStartPage
 from data import UrlsCosmicAdventure
 
@@ -67,7 +68,20 @@ class TestMathCosmicAdventure:
         lesson_fix_rocket = CosmicAdventureLessonFixRocketPage(driver)
         lesson_fix_rocket.open(UrlsCosmicAdventure.FIX_ROCKET)
         lesson_fix_rocket.click_on_button_play()
-        time.sleep(3)
+        lesson_fix_rocket.click_on_next_button()
+        lesson_fix_rocket.click_on_box_with_three_stones()
+        lesson_fix_rocket.click_on_box_with_one_stone()
+        lesson_fix_rocket.click_on_zavrik_with_four_stones()
+        lesson_fix_rocket.click_on_zavrik_with_three_stones()
+        lesson_fix_rocket.click_on_next_button()
+        lesson_fix_rocket.drag_rocket_element_to_rocket()
+        lesson_fix_rocket.check_table_marathon_is_displayed()
+
+    def test_math_cosmic_adventure_save_knysh(self, driver, login):
+        lesson_save_knysh = CosmicAdventureLessonSaveKnyshPage(driver)
+        lesson_save_knysh.open(UrlsCosmicAdventure.SAVE_KNYSH)
+        time.sleep(5)
+
 
 
 

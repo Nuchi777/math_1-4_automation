@@ -1,3 +1,5 @@
+import time
+
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
@@ -30,6 +32,11 @@ class BasePage:
         droppable = self.element_is_visible(droppable_locator)
         ActionChains(self.driver).drag_and_drop(draggable, droppable).perform()
 
+    def drag_and_drop_on_to_element_new(self, draggable_locator, droppable_locator):
+        draggable = self.element_is_visible(draggable_locator)
+        droppable = self.element_is_visible(droppable_locator)
+        ActionChains(self.driver).drag_and_drop_new(draggable, droppable).perform()
+
     def scroll_to_element(self, locator):
         ActionChains(self.driver).scroll_to_element(locator).perform()
 
@@ -45,10 +52,3 @@ class BasePage:
     def get_current_title(self):
         WebDriverWait(self.driver, timeout=60).until(EC.visibility_of_element_located(MainPageLocators.MAIN_BANNER))
         return self.driver.title()
-
-
-
-
-
-
-

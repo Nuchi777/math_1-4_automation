@@ -7,3 +7,4 @@ class MainPageLocators:
     LOGIN_BUTTON = (By.XPATH, '(//button[@type="submit"])[1]')
     HEADBAR_LOGO = (By.XPATH, '//div[@data-testid="headbar-logo"]')
     TABLE_MARATHON = (By.XPATH, '//div[@class="elements__Table-marathon__sc-kzzx8a-3 cRzQiC"]')
+    TITLE_BASE_COURSE_FINISH = (By.XPATH, '//h3[text()="Поздравляю!"]')

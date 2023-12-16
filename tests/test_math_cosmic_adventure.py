@@ -1,5 +1,3 @@
-import time
-
 from pages.cosmic_adventure_lesson_explore_planet_page import CosmicAdventureLessonExplorePlanetPage
 from pages.cosmic_adventure_lesson_fix_rocket_page import CosmicAdventureLessonFixRocketPage
 from pages.cosmic_adventure_lesson_save_knysh_page import CosmicAdventureLessonSaveKnyshPage
@@ -80,23 +78,13 @@ class TestMathCosmicAdventure:
     def test_math_cosmic_adventure_save_knysh(self, driver, login):
         lesson_save_knysh = CosmicAdventureLessonSaveKnyshPage(driver)
         lesson_save_knysh.open(UrlsCosmicAdventure.SAVE_KNYSH)
-        time.sleep(5)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        lesson_save_knysh.click_on_button_play()
+        lesson_save_knysh.click_on_next_button()
+        lesson_save_knysh.click_on_button_key_6_fill_input_1()
+        lesson_save_knysh.click_on_button_key_7_fill_input_2()
+        lesson_save_knysh.click_on_button_key_1_and_0_fill_input_3()
+        lesson_save_knysh.click_on_next_button()
+        lesson_save_knysh.drag_rocket_element_to_rocket()
+        lesson_save_knysh.click_on_done_button()
+        lesson_save_knysh.click_on_button_continue_to_study()
+        lesson_save_knysh.check_title_base_course_finish_is_displayed()

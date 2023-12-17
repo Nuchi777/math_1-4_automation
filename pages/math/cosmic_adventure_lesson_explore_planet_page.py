@@ -5,17 +5,15 @@ from pages.base_page import BasePage
 
 
 class CosmicAdventureLessonExplorePlanetPage(BasePage):
-    INPUT = (By.XPATH, '//div[contains(@class, "styles__StyledPrimaryInputInner-sc")]')
-    INPUT_2 = (By.XPATH, '(//div[contains(@class, "styles__StyledPrimaryInputInner-sc")])[1]')
-    INPUT_4 = (By.XPATH, '(//div[contains(@class, "styles__StyledPrimaryInputInner-sc")])[2]')
-    BUTTON_KEY_3 = (By.XPATH, '//div[contains(@class, "styles__StyledKey-sc")][text()="3"]')
-    BUTTON_KEY_2 = (By.XPATH, '//div[contains(@class, "styles__StyledKey-sc")][text()="2"]')
-    BUTTON_KEY_4 = (By.XPATH, '//div[contains(@class, "styles__StyledKey-sc")][text()="4"]')
-    BUTTON_KEY_5 = (By.XPATH, '//div[contains(@class, "styles__StyledKey-sc")][text()="5"]')
+    INPUT = (By.XPATH, '//div[contains(@class, "focused")]')
+    BUTTON_KEY_3 = (By.XPATH, '//div[@data-value="3"]')
+    BUTTON_KEY_2 = (By.XPATH, '//div[@data-value="2"]')
+    BUTTON_KEY_4 = (By.XPATH, '//div[@data-value="4"]')
+    BUTTON_KEY_5 = (By.XPATH, '//div[@data-value="5"]')
     NUMBER_7 = (By.XPATH, '//div[@data-component-name="picBlockItem_3"]')
     NUMBER_1 = (By.XPATH, '//div[@data-component-name="picBlockItem_1"]')
     NUMBER_5 = (By.XPATH, '//div[@data-component-name="picBlockItem_0"]')
-    BUTTON_NEXT = (By.XPATH, '//div[contains(@class, "styles__StyledNextButton-sc")]')
+    BUTTON_NEXT = (By.XPATH, '//div[contains(@class, "NextButton")]')
     CIFRYATA_LIST = [(By.CSS_SELECTOR, '#ClickObject'), (By.CSS_SELECTOR, '#ClickObject_2'),
                      (By.CSS_SELECTOR, '#ClickObject_3'), (By.CSS_SELECTOR, '#ClickObject_4'),
                      (By.CSS_SELECTOR, '#ClickObject_5')]
@@ -36,15 +34,17 @@ class CosmicAdventureLessonExplorePlanetPage(BasePage):
     def click_on_button_key_3_fill_input_3(self):
         self.element_is_visible(self.INPUT)
         self.element_is_visible(self.BUTTON_KEY_3).click()
+        self.element_is_invisible(self.INPUT)
 
     def click_on_button_key_2_fill_input_2(self):
-        self.element_is_visible(self.PROGRESS_BAR_CHUNK_1)
-        self.element_is_visible(self.INPUT_2)
+        self.element_is_visible(self.INPUT)
         self.element_is_visible(self.BUTTON_KEY_2).click()
+        self.element_is_invisible(self.INPUT)
 
     def click_on_button_key_4_fill_input_4(self):
-        self.element_is_clickable(self.INPUT_4)
+        self.element_is_visible(self.INPUT)
         self.element_is_visible(self.BUTTON_KEY_4).click()
+
 
     def click_on_number_seven(self):
         self.element_is_visible(self.NUMBER_7).click()

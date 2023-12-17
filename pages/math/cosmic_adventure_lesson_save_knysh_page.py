@@ -6,7 +6,7 @@ from pages.base_page import BasePage
 
 class CosmicAdventureLessonSaveKnyshPage(BasePage):
     BUTTON_PLAY = (By.XPATH, '//div[contains(@class, "StyledButtonWrap")]')
-    BUTTON_NEXT = (By.XPATH, '//div[contains(@class, "styles__StyledNextButton-sc")]')
+    BUTTON_NEXT = (By.XPATH, '//div[contains(@class, "NextButton")]')
     INPUT_1 = (By.XPATH, '(//div[contains(@class, "InputInner")])[1]')
     INPUT_2 = (By.XPATH, '(//div[contains(@class, "InputInner")])[2]')
     INPUT_3 = (By.XPATH, '(//div[contains(@class, "InputInner")])[3]')

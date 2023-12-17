@@ -5,7 +5,7 @@ from pages.base_page import BasePage
 
 class CosmicAdventureLessonFixRocketPage(BasePage):
     BUTTON_PLAY = (By.XPATH, '//div[contains(@class, "StyledButtonWrap")]')
-    BUTTON_NEXT = (By.XPATH, '//div[contains(@class, "styles__StyledNextButton-sc")]')
+    BUTTON_NEXT = (By.XPATH, '//div[contains(@class, "NextButton")]')
     BOX_THREE_STONES = (By.XPATH, '//div[@data-component-name="picBlockItem_0"]')
     BOX_ONE_STONES = (By.XPATH, '//div[@data-component-name="picBlockItem_4"]')
     ZAVR_FOUR_STONES = (By.XPATH, '//div[@data-component-name="picBlockItem_0"]')

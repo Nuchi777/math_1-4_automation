@@ -41,7 +41,7 @@ class TestMathCosmicAdventure:
         lesson_start.click_on_button_with_number_8_step_2()
         lesson_start.click_on_button_with_number_10_step_2()
         lesson_start.click_on_next_button()
-        lesson_start.check_table_marathon_is_displayed()
+        lesson_start.check_button_decide_further_is_displayed()
 
 
     def test_math_cosmic_adventure_explore_planet(self, driver, login):
@@ -63,7 +63,7 @@ class TestMathCosmicAdventure:
         lesson_explore_planet.drag_wrapper_tail_to_last_position()
         lesson_explore_planet.click_on_done_button()
         lesson_explore_planet.click_on_next_button()
-        lesson_explore_planet.check_table_marathon_is_displayed()
+        lesson_explore_planet.check_button_decide_further_is_displayed()
 
     def test_math_cosmic_adventure_fix_rocket(self, driver, login):
         lesson_fix_rocket = CosmicAdventureLessonFixRocketPage(driver)
@@ -76,7 +76,7 @@ class TestMathCosmicAdventure:
         lesson_fix_rocket.click_on_zavrik_with_three_stones()
         lesson_fix_rocket.click_on_next_button()
         lesson_fix_rocket.drag_rocket_element_to_rocket()
-        lesson_fix_rocket.check_table_marathon_is_displayed()
+        lesson_fix_rocket.check_button_decide_further_is_displayed()
 
     def test_math_cosmic_adventure_save_knysh(self, driver, login):
         lesson_save_knysh = CosmicAdventureLessonSaveKnyshPage(driver)

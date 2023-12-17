@@ -36,7 +36,7 @@ class TestMathCountingObjects:
         lesson_take_kitten_to_bus_stop.click_on_house_3()
         lesson_take_kitten_to_bus_stop.click_on_house_7()
         lesson_take_kitten_to_bus_stop.click_on_house_1()
-        lesson_take_kitten_to_bus_stop.check_table_marathon_is_displayed()
+        lesson_take_kitten_to_bus_stop.check_button_decide_further_is_displayed()
 
 
 

@@ -127,5 +127,5 @@ class CosmicAdventureLessonStartPage(BasePage):
     def click_on_button_with_number_10_step_2(self):
         self.element_is_visible(self.BUTTON_10).click()
 
-    def check_table_marathon_is_displayed(self):
-        assert self.element_is_visible(MainPageLocators.TABLE_MARATHON).is_displayed()
+    def check_button_decide_further_is_displayed(self):
+        assert self.element_is_visible(MainPageLocators.BUTTON_DECIDE_FURTHER).is_displayed()

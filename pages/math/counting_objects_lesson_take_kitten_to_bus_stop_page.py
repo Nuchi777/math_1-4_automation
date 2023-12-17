@@ -87,5 +87,5 @@ class CountingObjectsLessonTakeKittenToBusStopPage(BasePage):
         self.element_is_visible(self.HOUSE_7).click()
         self.element_is_invisible(self.HOUSE_7)
 
-    def check_table_marathon_is_displayed(self):
-        assert self.element_is_visible(MainPageLocators.TABLE_MARATHON).is_displayed()
+    def check_button_decide_further_is_displayed(self):
+        assert self.element_is_visible(MainPageLocators.BUTTON_DECIDE_FURTHER).is_displayed()

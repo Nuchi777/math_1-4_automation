@@ -14,20 +14,17 @@ class CosmicAdventureLessonExplorePlanetPage(BasePage):
     NUMBER_1 = (By.XPATH, '//div[@data-component-name="picBlockItem_1"]')
     NUMBER_5 = (By.XPATH, '//div[@data-component-name="picBlockItem_0"]')
     BUTTON_NEXT = (By.XPATH, '//div[contains(@class, "NextButton")]')
+    CIFRYATA_ANIMATION = (By.XPATH, '//div[contains(@class, "startAnimation")]')
     CIFRYATA_LIST = [(By.CSS_SELECTOR, '#ClickObject'), (By.CSS_SELECTOR, '#ClickObject_2'),
                      (By.CSS_SELECTOR, '#ClickObject_3'), (By.CSS_SELECTOR, '#ClickObject_4'),
                      (By.CSS_SELECTOR, '#ClickObject_5')]
     PIC_BLOCK_3 = (By.XPATH, '//div[@data-component-name="picBlockItem_2"]')
     PIC_BLOCK_4 = (By.XPATH, '//div[@data-component-name="picBlockItem_3"]')
-    SHUFFLE_DRAG_SORTER_HEAD_FISH = (By.XPATH, '(//div[@class="styles__StyledWrapper-sc-1x77hkp-0 iGdZUz"])[2]')
-    SHUFFLE_DRAG_SORTER_HEAD_BODY_FISH = (By.XPATH, '(//div[@class="styles__StyledWrapper-sc-1x77hkp-0 iGdZUz"])[1]')
-    SHUFFLE_DRAG_SORTER_BODY_FISH = (By.XPATH, '(//div[@class="styles__StyledWrapper-sc-1x77hkp-0 iGdZUz"])[4]')
-    SHUFFLE_DRAG_SORTER_TAIL_FISH = (By.XPATH, '(//div[@class="styles__StyledWrapper-sc-1x77hkp-0 iGdZUz"])[3]')
-    BUTTON_DONE = (By.XPATH, '//button[contains(@class, "StyledButtonDone")]')
-    PROGRESS_BAR_CHUNK_1 = (By.XPATH, '//div[@width="53.269230769230774"]')
-    PROGRESS_BAR_CHUNK_3 = (By.XPATH, '//div[@width="114.8076923076923"]')
-    PROGRESS_BAR_CHUNK_4 = (By.XPATH, '//div[@width="145.5769230769231"]')
-    PROGRESS_BAR_CHUNK_7 = (By.XPATH, '//div[@width="299.4230769230769"]')
+    SHUFFLE_DRAG_SORTER_HEAD_FISH = (By.XPATH, '(//div[@data-component-name="shuffle-drag-item"])[2]')
+    SHUFFLE_DRAG_SORTER_HEAD_BODY_FISH = (By.XPATH, '(//div[@data-component-name="shuffle-drag-item"])[1]')
+    SHUFFLE_DRAG_SORTER_BODY_FISH = (By.XPATH, '(//div[@data-component-name="shuffle-drag-item"])[4]')
+    SHUFFLE_DRAG_SORTER_TAIL_FISH = (By.XPATH, '(//div[@data-component-name="shuffle-drag-item"])[3]')
+    BUTTON_DONE = (By.XPATH, '//button[contains(@class, "ButtonDone")]')
 
 
 
@@ -48,20 +45,21 @@ class CosmicAdventureLessonExplorePlanetPage(BasePage):
 
     def click_on_number_seven(self):
         self.element_is_visible(self.NUMBER_7).click()
+        self.element_is_invisible(self.NUMBER_7)
 
     def click_on_number_one(self):
-        self.element_is_visible(self.PROGRESS_BAR_CHUNK_3)
         self.element_is_visible(self.NUMBER_1).click()
+        self.element_is_invisible(self.NUMBER_1)
 
     def click_on_number_five(self):
-        self.element_is_visible(self.PROGRESS_BAR_CHUNK_4)
         self.element_is_visible(self.NUMBER_5).click()
 
     def click_on_next_button(self):
         self.element_is_visible(self.BUTTON_NEXT).click()
 
     def click_on_cifryts(self):
-        time.sleep(5)
+        self.element_is_visible(self.CIFRYATA_ANIMATION)
+        self.element_is_invisible(self.CIFRYATA_ANIMATION)
         for i in self.CIFRYATA_LIST:
             self.element_is_visible(i).click()
 
@@ -71,9 +69,9 @@ class CosmicAdventureLessonExplorePlanetPage(BasePage):
 
     def click_on_pic_block_button_number_3(self):
         self.element_is_visible(self.PIC_BLOCK_3).click()
+        self.element_is_invisible(self.PIC_BLOCK_3)
 
     def click_on_pic_block_button_number_4(self):
-        self.element_is_visible(self.PROGRESS_BAR_CHUNK_7)
         self.element_is_visible(self.PIC_BLOCK_4).click()
 
     def drag_wrapper_heat_to_first_position(self):
@@ -84,7 +82,7 @@ class CosmicAdventureLessonExplorePlanetPage(BasePage):
 
     def click_on_done_button(self):
         time.sleep(1)
-        self.element_is_visible(self.BUTTON_DONE).click()
+        self.element_is_clickable(self.BUTTON_DONE).click()
 
     def check_table_marathon_is_displayed(self):
         assert self.element_is_visible(MainPageLocators.TABLE_MARATHON).is_displayed()

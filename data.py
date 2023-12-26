@@ -11,6 +11,7 @@ class UrlsCosmicAdventure:
 
 class UrlsCountingObjects:
     TAKE_KITTEN_TO_BUS_STOP = 'https://uchi.ru/exercise/player?back_path=%2Fprofile%2Fstudents%2Fstudy%2F1%2Flesson%2F118&card_id=420&congrat_path=%2Fprofile%2Fstudents%2Fcongrats%2Fcard%2F420%3Fsubject_id%3D1&content_card_id=420&options=progress_panel%2Canimated&subject_id=1'
+    WHICH_BUS_STOP_KITTEN = 'https://uchi.ru/exercise/player?back_path=%2Fprofile%2Fstudents%2Fstudy%2F1%2Flesson%2F118&card_id=421&congrat_path=%2Fprofile%2Fstudents%2Fcongrats%2Fcard%2F421%3Fsubject_id%3D1&content_card_id=421&options=progress_panel%2Canimated&subject_id=1'
 
 
 class UserData:

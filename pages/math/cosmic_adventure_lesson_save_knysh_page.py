@@ -7,9 +7,7 @@ from pages.base_page import BasePage
 class CosmicAdventureLessonSaveKnyshPage(BasePage):
     BUTTON_PLAY = (By.XPATH, '//div[contains(@class, "StyledButtonWrap")]')
     BUTTON_NEXT = (By.XPATH, '//div[contains(@class, "NextButton")]')
-    INPUT_1 = (By.XPATH, '(//div[contains(@class, "InputInner")])[1]')
-    INPUT_2 = (By.XPATH, '(//div[contains(@class, "InputInner")])[2]')
-    INPUT_3 = (By.XPATH, '(//div[contains(@class, "InputInner")])[3]')
+    INPUT = (By.XPATH, '//div[contains(@class, "focused")]')
     BUTTON_KEY_6 = (By.XPATH, '//div[@data-value="6"]')
     BUTTON_KEY_7 = (By.XPATH, '//div[@data-value="7"]')
     BUTTON_KEY_1 = (By.XPATH, '//div[@data-value="1"]')
@@ -27,15 +25,15 @@ class CosmicAdventureLessonSaveKnyshPage(BasePage):
         self.element_is_visible(self.BUTTON_NEXT).click()
 
     def click_on_button_key_6_fill_input_1(self):
-        self.element_is_visible(self.INPUT_1)
+        self.element_is_visible(self.INPUT)
         self.element_is_visible(self.BUTTON_KEY_6).click()
 
     def click_on_button_key_7_fill_input_2(self):
-        self.element_is_visible(self.INPUT_2)
+        self.element_is_visible(self.INPUT)
         self.element_is_visible(self.BUTTON_KEY_7).click()
 
     def click_on_button_key_1_and_0_fill_input_3(self):
-        self.element_is_visible(self.INPUT_3)
+        self.element_is_visible(self.INPUT)
         self.element_is_visible(self.BUTTON_KEY_1).click()
         self.element_is_visible(self.BUTTON_KEY_0).click()
 
@@ -48,5 +46,5 @@ class CosmicAdventureLessonSaveKnyshPage(BasePage):
     def click_on_button_continue_to_study(self):
         self.element_is_visible(self.BUTTON_CONTINUE_TO_STUDY).click()
 
-    def check_title_base_course_finish_is_displayed(self):
-        assert self.element_is_visible(MainPageLocators.TITLE_BASE_COURSE_FINISH).is_displayed()
+    def check_headbar_logo_is_displayed(self):
+        assert self.element_is_visible(MainPageLocators.HEADBAR_LOGO).is_displayed()

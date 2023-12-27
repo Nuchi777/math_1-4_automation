@@ -14,6 +14,10 @@ class UrlsCountingObjects:
     WHICH_BUS_STOP_KITTEN = 'https://uchi.ru/exercise/player?back_path=%2Fprofile%2Fstudents%2Fstudy%2F1%2Flesson%2F118&card_id=421&congrat_path=%2Fprofile%2Fstudents%2Fcongrats%2Fcard%2F421%3Fsubject_id%3D1&content_card_id=421&options=progress_panel%2Canimated&subject_id=1'
 
 
+class UrlsFirstSecondThird:
+    HOW_MANY_ATHLETES = 'https://uchi.ru/exercise/player?back_path=%2Fprofile%2Fstudents%2Fstudy%2F1%2Flesson%2F18175&card_id=135056&congrat_path=%2Fprofile%2Fstudents%2Fcongrats%2Fcard%2F135056%3Fsubject_id%3D1&content_card_id=8493&options=progress_panel%2Canimated&subject_id=1'
+
+
 class UserData:
     USER_LOGIN = '12'
     USER_PASSWORD = 'фонтан34133'

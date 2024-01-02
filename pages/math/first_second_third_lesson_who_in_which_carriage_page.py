@@ -7,8 +7,6 @@ from pages.base_page import BasePage
 
 class FirstSecondThirdLessonWhoInWhichCarriagePage(BasePage):
     FIRST_CARRIAGE_CLICKABLE = (By.XPATH, '//div[@data-component-name="picBlockItem_1"]')
-    # SECOND_CARRIAGE_CLICKABLE = (By.XPATH, '//div[@data-component-name="picBlockItem_2"]')
-    # THIRD_CARRIAGE_CLICKABLE = (By.XPATH, '//div[@data-component-name="picBlockItem_3"]')
     FOURTH_CARRIAGE_CLICKABLE = (By.XPATH, '//div[@data-component-name="picBlockItem_4"]')
     ANIMALS = (By.XPATH, '//div[contains(@class, "DraggableItems")]')
     FIRST_CARRIAGE_DROPPABLE = (By.XPATH, '(//div[contains(@class, "DropContainer")])[1]')
@@ -16,7 +14,6 @@ class FirstSecondThirdLessonWhoInWhichCarriagePage(BasePage):
     THIRD_CARRIAGE_DROPPABLE = (By.XPATH, '(//div[contains(@class, "DropContainer")])[3]')
     FOURTH_CARRIAGE_DROPPABLE = (By.XPATH, '(//div[contains(@class, "DropContainer")])[4]')
     CONGRAT_STATE_DEFAULT = (By.XPATH, '//div[contains(@class, "BoxesContainer")]//div[contains(@class, "state_default")]')
-
 
 
     def click_on_first_carriage(self):

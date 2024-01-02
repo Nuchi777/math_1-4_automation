@@ -22,7 +22,7 @@ class UrlsFirstSecondThird:
 
 class UrlsNumberLineAndNumberAxis:
     LEARNING_NUMBER_ORDER = 'https://uchi.ru/exercise/player?back_path=%2Fprofile%2Fstudents%2Fstudy%2F1%2Flesson%2F120&card_id=414&congrat_path=%2Fprofile%2Fstudents%2Fcongrats%2Fcard%2F414%3Fsubject_id%3D1&content_card_id=414&options=progress_panel%2Canimated&subject_id=1'
-
+    ACQUAINTED_WITH_NUMBER_AXIS = 'https://uchi.ru/exercise/player?back_path=%2Fprofile%2Fstudents%2Fstudy%2F1%2Flesson%2F120&card_id=442&congrat_path=%2Fprofile%2Fstudents%2Fcongrats%2Fcard%2F442%3Fsubject_id%3D1&content_card_id=442&options=progress_panel%2Canimated&subject_id=1'
 
 
 class UserData:

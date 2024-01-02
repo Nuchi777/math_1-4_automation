@@ -1,4 +1,6 @@
 import time
+
+from pages.math.first_second_third_lesson_choose_answer_page import FirstSecondThirdLessonChooseAnswerPage
 from pages.math.first_second_third_lesson_how_many_athletes_page import FirstSecondThirdLessonHowManyAthletesPage
 from pages.math.first_second_third_lesson_poryadkovye_chislitelnye_page import FirstSecondThirdLessonPoryadkovyeChislitelnyePage
 from pages.math.first_second_third_lesson_who_in_which_carriage_page import FirstSecondThirdLessonWhoInWhichCarriagePage
@@ -53,3 +55,17 @@ class TestMathFirstSecondThird:
         lesson_who_in_which_carriage.drag_animal_in_third_carriage()
         lesson_who_in_which_carriage.drag_animal_in_first_carriage()
         lesson_who_in_which_carriage.check_headbar_logo_is_displayed()
+
+    def test_math_first_second_third_lesson_choose_answer(self, driver, login):
+        lesson_choose_answer = FirstSecondThirdLessonChooseAnswerPage(driver)
+        lesson_choose_answer.open(UrlsFirstSecondThird.CHOOSE_ANSWER)
+        lesson_choose_answer.click_on_three_button()
+        lesson_choose_answer.click_on_second_button()
+        lesson_choose_answer.click_on_five_button()
+        lesson_choose_answer.click_on_in_fourth_button()
+        lesson_choose_answer.check_headbar_logo_is_displayed()
+
+
+
+
+

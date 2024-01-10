@@ -20,9 +20,11 @@ class UrlsFirstSecondThird:
     WHO_IN_WHICH_CARRIAGE = 'https://uchi.ru/exercise/player?back_path=%2Fprofile%2Fstudents%2Fstudy%2F1%2Flesson%2F18175&card_id=135058&congrat_path=%2Fprofile%2Fstudents%2Fcongrats%2Fcard%2F135058%3Fsubject_id%3D1&content_card_id=10322&options=progress_panel%2Canimated&subject_id=1'
     CHOOSE_ANSWER = 'https://uchi.ru/exercise/player?back_path=%2Fprofile%2Fstudents%2Fstudy%2F1%2Flesson%2F18175&card_id=60903&congrat_path=%2Fprofile%2Fstudents%2Fcongrats%2Fdiplom%2F60903%3Fsubject_id%3D1%26topic_id%3D13%26grade%3D1%26&content_card_id=8495&options=progress_panel%2Canimated&subject_id=1'
 
+
 class UrlsNumberLineAndNumberAxis:
     LEARNING_NUMBER_ORDER = 'https://uchi.ru/exercise/player?back_path=%2Fprofile%2Fstudents%2Fstudy%2F1%2Flesson%2F120&card_id=414&congrat_path=%2Fprofile%2Fstudents%2Fcongrats%2Fcard%2F414%3Fsubject_id%3D1&content_card_id=414&options=progress_panel%2Canimated&subject_id=1'
     ACQUAINTED_WITH_NUMBER_AXIS = 'https://uchi.ru/exercise/player?back_path=%2Fprofile%2Fstudents%2Fstudy%2F1%2Flesson%2F120&card_id=442&congrat_path=%2Fprofile%2Fstudents%2Fcongrats%2Fcard%2F442%3Fsubject_id%3D1&content_card_id=442&options=progress_panel%2Canimated&subject_id=1'
+    WHAT_POINT_GRASSHOPPER = 'https://uchi.ru/exercise/player?back_path=%2Fprofile%2Fstudents%2Fstudy%2F1%2Flesson%2F120&card_id=377&congrat_path=%2Fprofile%2Fstudents%2Fcongrats%2Fcard%2F377%3Fsubject_id%3D1&content_card_id=377&options=progress_panel%2Canimated&subject_id=1'
 
 
 class UserData:

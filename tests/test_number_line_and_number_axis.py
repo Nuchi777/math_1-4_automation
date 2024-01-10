@@ -3,6 +3,8 @@ from pages.math.number_line_and_number_axis_lesson_acquainted_with_number_axis_p
     NumberLineAndNumberAxisLessonAcquaintedWithNumberAxisPage
 from pages.math.number_line_and_number_axis_lesson_learning_number_order_page import \
     NumberLineAndNumberAxisLessonLearningNumberOrderPage
+from pages.math.number_line_and_number_axis_lesson_what_point_grasshopper_page import \
+    NumberLineAndNumberAxisLessonWhatPointGrasshopperPage
 
 
 class TestNumberLineAndNumberAxis:
@@ -59,6 +61,21 @@ class TestNumberLineAndNumberAxis:
         lesson_acquainted_with_number_axis.move_zavrik_to_point_5()
         lesson_acquainted_with_number_axis.move_zavrik_to_point_9()
         lesson_acquainted_with_number_axis.check_headbar_logo_is_displayed()
+
+    def test_math_number_line_and_number_axis_lesson_what_point_grasshopper(self, driver, login):
+        lesson_what_point_grasshopper = NumberLineAndNumberAxisLessonWhatPointGrasshopperPage(driver)
+        lesson_what_point_grasshopper.open(UrlsNumberLineAndNumberAxis.WHAT_POINT_GRASSHOPPER)
+        lesson_what_point_grasshopper.click_on_button_key_3()
+        lesson_what_point_grasshopper.click_on_button_key_5()
+        lesson_what_point_grasshopper.click_on_button_key_4()
+        lesson_what_point_grasshopper.click_on_button_key_7()
+        lesson_what_point_grasshopper.click_on_button_key_2()
+        lesson_what_point_grasshopper.click_on_button_key_6()
+        lesson_what_point_grasshopper.click_on_button_key_9()
+        lesson_what_point_grasshopper.click_on_button_key_8()
+        lesson_what_point_grasshopper.click_on_button_key_1()
+        lesson_what_point_grasshopper.check_headbar_logo_is_displayed()
+
 
 
 

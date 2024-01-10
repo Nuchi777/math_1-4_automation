@@ -7,11 +7,9 @@ from pages.base_page import BasePage
 
 class NumberLineAndNumberAxisLessonAcquaintedWithNumberAxisPage(BasePage):
     ZAVRIK = (By.XPATH, '//div[contains(@class,"AxisImage")]')
-    BUTTON_LEFT = (By.XPATH, '//div[@data-value="-1"]')
     BUTTON_RIGHT = (By.XPATH, '//div[@data-value="+1"]')
     BUTTON_DONE = (By.XPATH, '//div[@data-value="Enter"]')
     INPUT = (By.XPATH, '//div[contains(@class, "focused")]')
-    KEYBOARD = (By.XPATH, '//div[contains(@class, "KeyboardInner")]')
     BUTTON_KEY_1 = (By.XPATH, '//div[@data-value="1"]')
     BUTTON_KEY_2 = (By.XPATH, '//div[@data-value="2"]')
     BUTTON_KEY_3 = (By.XPATH, '//div[@data-value="3"]')

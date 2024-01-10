@@ -3,6 +3,8 @@ from pages.math.number_line_and_number_axis_lesson_acquainted_with_number_axis_p
     NumberLineAndNumberAxisLessonAcquaintedWithNumberAxisPage
 from pages.math.number_line_and_number_axis_lesson_learning_number_order_page import \
     NumberLineAndNumberAxisLessonLearningNumberOrderPage
+from pages.math.number_line_and_number_axis_lesson_learning_numbers_in_reverse_order_page import \
+    NumberLineAndNumberAxisLessonlearningNumbersInReverseOrderPage
 from pages.math.number_line_and_number_axis_lesson_what_point_grasshopper_page import \
     NumberLineAndNumberAxisLessonWhatPointGrasshopperPage
 
@@ -75,6 +77,34 @@ class TestNumberLineAndNumberAxis:
         lesson_what_point_grasshopper.click_on_button_key_8()
         lesson_what_point_grasshopper.click_on_button_key_1()
         lesson_what_point_grasshopper.check_headbar_logo_is_displayed()
+
+    def test_math_number_line_and_number_axis_lesson_learning_numbers_in_reverse_order(self, driver, login):
+        lesson_learning_numbers_in_reverse_order = NumberLineAndNumberAxisLessonlearningNumbersInReverseOrderPage(driver)
+        lesson_learning_numbers_in_reverse_order.open(UrlsNumberLineAndNumberAxis.NUMBERS_IN_REVERSE_ORDER)
+        lesson_learning_numbers_in_reverse_order.click_on_button_key_9_fill_input_9()
+        lesson_learning_numbers_in_reverse_order.click_on_button_key_8_fill_input_8()
+        lesson_learning_numbers_in_reverse_order.click_on_button_key_7_fill_input_7()
+        lesson_learning_numbers_in_reverse_order.click_on_button_key_6_fill_input_6()
+        lesson_learning_numbers_in_reverse_order.click_on_button_key_5_fill_input_5()
+        lesson_learning_numbers_in_reverse_order.click_on_button_key_4_fill_input_4()
+        lesson_learning_numbers_in_reverse_order.click_on_button_key_3_fill_input_3()
+        lesson_learning_numbers_in_reverse_order.click_on_button_key_2_fill_input_2()
+        lesson_learning_numbers_in_reverse_order.click_on_button_key_1_fill_input_1()
+        lesson_learning_numbers_in_reverse_order.click_on_button_key_5_fill_input_5()
+        lesson_learning_numbers_in_reverse_order.click_on_button_key_3_fill_input_3()
+        lesson_learning_numbers_in_reverse_order.click_on_button_key_9_fill_input_9()
+        lesson_learning_numbers_in_reverse_order.click_on_button_key_8_fill_input_8()
+        lesson_learning_numbers_in_reverse_order.click_on_button_key_7_fill_input_7()
+        lesson_learning_numbers_in_reverse_order.click_on_button_key_4_fill_input_4()
+        lesson_learning_numbers_in_reverse_order.click_on_button_key_9_fill_input_9()
+        lesson_learning_numbers_in_reverse_order.click_on_button_key_5_fill_input_5()
+        lesson_learning_numbers_in_reverse_order.click_on_button_key_6_fill_input_6()
+        lesson_learning_numbers_in_reverse_order.click_on_button_key_5_fill_input_5()
+        lesson_learning_numbers_in_reverse_order.click_on_button_key_4_fill_input_4()
+        lesson_learning_numbers_in_reverse_order.click_on_button_key_2_fill_input_2()
+        lesson_learning_numbers_in_reverse_order.check_headbar_logo_is_displayed()
+
+
 
 
 

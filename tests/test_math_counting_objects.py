@@ -1,5 +1,5 @@
 import time
-
+import allure
 from pages.math.counting_objects_lesson_take_kitten_to_bus_stop_page import CountingObjectsLessonTakeKittenToBusStopPage
 from pages.math.counting_objects_lesson_which_bus_stop_kitten_page import CountingObjectsLessonWhichBusStopKittenPage
 from data import UrlsCountingObjects

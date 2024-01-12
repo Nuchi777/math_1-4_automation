@@ -14,8 +14,8 @@ class CountingObjectsLessonWhichBusStopKittenPage(BasePage):
 
 
     def click_on_button_key_4_fill_input_1(self):
-        self.element_is_visible(self.INPUT)
-        self.element_is_visible(self.BUTTON_KEY_4).click()
+        self.element_is_clickable(self.INPUT)
+        self.element_is_clickable(self.BUTTON_KEY_4).click()
         self.element_is_invisible(self.INPUT)
 
     def click_on_button_key_3_fill_input_2(self):

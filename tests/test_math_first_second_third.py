@@ -33,13 +33,13 @@ class TestMathFirstSecondThird:
         lesson_how_many_athletes.drag_order_third_bag_to_second_tray()
         lesson_how_many_athletes.check_headbar_logo_is_displayed()
 
-    def test_math_first_second_third_lesson_poryadkovye_chislitelnye(self, driver, login):
-        lesson_poryadkovye_chislitelnye = FirstSecondThirdLessonPoryadkovyeChislitelnyePage(driver)
-        lesson_poryadkovye_chislitelnye.open(UrlsFirstSecondThird.PORYADKOVYE_CHISLITELNYE)
-        # lesson_poryadkovye_chislitelnye.click_on_button_key_5_fill_input()
-        lesson_poryadkovye_chislitelnye.drag_first_zavrik_on_first_position()
-        pass
-        #не получается реализовать сортер, нет локаторов у элементов
+    # def test_math_first_second_third_lesson_poryadkovye_chislitelnye(self, driver, login):
+    #     lesson_poryadkovye_chislitelnye = FirstSecondThirdLessonPoryadkovyeChislitelnyePage(driver)
+    #     lesson_poryadkovye_chislitelnye.open(UrlsFirstSecondThird.PORYADKOVYE_CHISLITELNYE)
+    #     # lesson_poryadkovye_chislitelnye.click_on_button_key_5_fill_input()
+    #     lesson_poryadkovye_chislitelnye.drag_first_zavrik_on_first_position()
+    #     pass
+    #     #не получается реализовать сортер, нет локаторов у элементов
 
     def test_math_first_second_third_lesson_who_in_which_carriage(self, driver, login):
         lesson_who_in_which_carriage = FirstSecondThirdLessonWhoInWhichCarriagePage(driver)

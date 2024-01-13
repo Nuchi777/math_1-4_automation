@@ -1,5 +1,3 @@
-import time
-import allure
 from pages.math.cosmic_adventure_lesson_explore_planet_page import CosmicAdventureLessonExplorePlanetPage
 from pages.math.cosmic_adventure_lesson_fix_rocket_page import CosmicAdventureLessonFixRocketPage
 from pages.math.cosmic_adventure_lesson_save_knysh_page import CosmicAdventureLessonSaveKnyshPage
@@ -9,9 +7,6 @@ from data import UrlsCosmicAdventure
 
 class TestMathCosmicAdventure:
 
-
-    @allure.suite('Космическое приключение')
-    @allure.title('Старт')
     def test_math_cosmic_adventure_start(self, driver, login):
         lesson_start = CosmicAdventureLessonStartPage(driver)
         lesson_start.open(UrlsCosmicAdventure.START)
@@ -46,7 +41,6 @@ class TestMathCosmicAdventure:
         lesson_start.click_on_next_button()
         lesson_start.check_headbar_logo_is_displayed()
 
-    @allure.title('Исследуй планету')
     def test_math_cosmic_adventure_explore_planet(self, driver, login):
         lesson_explore_planet = CosmicAdventureLessonExplorePlanetPage(driver)
         lesson_explore_planet.open(UrlsCosmicAdventure.EXPLORE_PLANET)
@@ -68,7 +62,6 @@ class TestMathCosmicAdventure:
         lesson_explore_planet.click_on_next_button()
         lesson_explore_planet.check_headbar_logo_is_displayed()
 
-    @allure.title('Почини ракету')
     def test_math_cosmic_adventure_fix_rocket(self, driver, login):
         lesson_fix_rocket = CosmicAdventureLessonFixRocketPage(driver)
         lesson_fix_rocket.open(UrlsCosmicAdventure.FIX_ROCKET)
@@ -82,7 +75,6 @@ class TestMathCosmicAdventure:
         lesson_fix_rocket.drag_rocket_element_to_rocket()
         lesson_fix_rocket.check_headbar_logo_is_displayed()
 
-    @allure.title('Спаси Кныша')
     def test_math_cosmic_adventure_save_knysh(self, driver, login):
         lesson_save_knysh = CosmicAdventureLessonSaveKnyshPage(driver)
         lesson_save_knysh.open(UrlsCosmicAdventure.SAVE_KNYSH)

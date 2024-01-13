@@ -35,3 +35,4 @@ class UrlsNumberLineAndNumberAxis:
 
 class UrlsSpeechAndLanguage:
     WHAT_IS_SPEECH = 'https://uchi.ru/exercise/player?back_path=%2Fprofile%2Fstudents%2Fstudy%2F2%2Flesson%2F3203&card_id=13478&congrat_path=%2Fprofile%2Fstudents%2Fcongrats%2Fcard%2F13478%3Fsubject_id%3D2&content_card_id=3963&options=progress_panel%2Canimated&subject_id=2'
+    WHY_IS_SPEECH_NEEDED = 'https://uchi.ru/exercise/player?back_path=%2Fprofile%2Fstudents%2Fstudy%2F2%2Flesson%2F3203&card_id=13479&congrat_path=%2Fprofile%2Fstudents%2Fcongrats%2Fcard%2F13479%3Fsubject_id%3D2&content_card_id=3964&options=progress_panel%2Canimated&subject_id=2'

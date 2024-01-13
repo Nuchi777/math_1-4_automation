@@ -10,8 +10,8 @@ class SpeechAndLanguageLessonWhatIsSpeechPage(BasePage):
     FIRST_PACKAGE_DROPPABLE = (By.XPATH, '(//div[contains(@class, "DropContainer")])[1]')
     SECOND_PACKAGE_DROPPABLE = (By.XPATH, '(//div[contains(@class, "DropContainer")])[2]')
     THIRD_PACKAGE_DROPPABLE = (By.XPATH, '(//div[contains(@class, "DropContainer")])[3]')
-    BUTTON_SPEAK = (By.XPATH, '(//div[contains(@class, "ButtonInner")])[2]')
-    BUTTON_HUMANS = (By.XPATH, '(//div[contains(@class, "ButtonInner")])[3]')
+    BUTTON_SPEAK = (By.XPATH, '//span[text()="говорить"]')
+    BUTTON_HUMANS = (By.XPATH, '//span[text()="люди"]')
 
     def drag_cat_in_package_meows(self):
         self.element_is_visible(self.FIRST_PACKAGE_DROPPABLE)

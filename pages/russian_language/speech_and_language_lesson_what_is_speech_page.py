@@ -14,7 +14,7 @@ class SpeechAndLanguageLessonWhatIsSpeechPage(BasePage):
     BUTTON_HUMANS = (By.XPATH, '//span[text()="люди"]')
 
     def drag_cat_in_package_meows(self):
-        self.element_is_visible(self.FIRST_PACKAGE_DROPPABLE)
+        self.element_is_clickable(self.FIST_CARD)
         self.drag_and_drop_on_to_element_new(self.FIST_CARD, self.THIRD_PACKAGE_DROPPABLE)
 
     def drag_human_in_package_speaks(self):
@@ -25,7 +25,7 @@ class SpeechAndLanguageLessonWhatIsSpeechPage(BasePage):
         self.element_is_invisible(self.FIRST_PACKAGE_DROPPABLE)
 
     def drag_mewing_in_package_with_cat(self):
-        self.element_is_visible(self.FIRST_PACKAGE_DROPPABLE)
+        self.element_is_clickable(self.FIST_CARD)
         self.drag_and_drop_on_to_element_new(self.FIST_CARD, self.THIRD_PACKAGE_DROPPABLE)
 
     def drag_speech_in_package_with_human(self):

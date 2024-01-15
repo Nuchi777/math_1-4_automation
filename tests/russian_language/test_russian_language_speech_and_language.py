@@ -1,7 +1,8 @@
 import time
 
 from data import UrlsSpeechAndLanguage
-
+from pages.russian_language.speech_and_language_lesson_native_language_page import \
+    SpeechAndLanguageLessonNativeLanguagePage
 from pages.russian_language.speech_and_language_lesson_what_is_speech_page import \
     SpeechAndLanguageLessonWhatIsSpeechPage
 from pages.russian_language.speech_and_language_lesson_what_should_speech_be_like_page import \
@@ -55,6 +56,21 @@ class TestSpeechAndLanguage:
         lesson_what_should_speech_be_like.click_on_button_literate()
         lesson_what_should_speech_be_like.click_on_button_polite()
         lesson_what_should_speech_be_like.check_headbar_logo_is_displayed()
+
+    def test_russian_language_speech_and_language_lesson_native_language_page(self, driver, login):
+        lesson_native_language = SpeechAndLanguageLessonNativeLanguagePage(driver)
+        lesson_native_language.open(UrlsSpeechAndLanguage.NATIVE_LANGUAGE)
+        lesson_native_language.click_on_first_photo_kalmykia()
+        lesson_native_language.click_on_second_photo_chuvashia()
+        lesson_native_language.click_on_third_photo_Bashkortostan()
+        lesson_native_language.click_on_fourth_photo_yakutia()
+        lesson_native_language.click_on_option_kalmyk()
+        lesson_native_language.click_on_option_chuvash()
+        lesson_native_language.click_on_option_yakut()
+        lesson_native_language.click_on_option_bashkir()
+        lesson_native_language.click_on_option_native_language()
+        lesson_native_language.click_on_option_russian_language()
+        lesson_native_language.check_headbar_logo_is_displayed()
 
 
 

@@ -1,3 +1,5 @@
+import time
+
 from selenium.webdriver.common.by import By
 from locators.main_page_locators import MainPageLocators
 from pages.base_page import BasePage
@@ -14,6 +16,7 @@ class SpeechAndLanguageLessonWhatIsSpeechPage(BasePage):
     BUTTON_HUMANS = (By.XPATH, '//span[text()="люди"]')
 
     def drag_cat_in_package_meows(self):
+        time.sleep(1)
         self.element_is_clickable(self.FIST_CARD)
         self.drag_and_drop_on_to_element_new(self.FIST_CARD, self.THIRD_PACKAGE_DROPPABLE)
 

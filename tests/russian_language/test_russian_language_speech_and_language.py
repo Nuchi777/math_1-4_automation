@@ -1,6 +1,8 @@
 import time
 
 from data import UrlsSpeechAndLanguage
+from pages.russian_language.speech_and_language_lesson_learning_vocabulary_words_page import \
+    SpeechAndLanguageLessonLearningVocabularyWordsPage
 from pages.russian_language.speech_and_language_lesson_native_language_page import \
     SpeechAndLanguageLessonNativeLanguagePage
 from pages.russian_language.speech_and_language_lesson_what_is_speech_page import \
@@ -71,6 +73,20 @@ class TestSpeechAndLanguage:
         lesson_native_language.click_on_option_native_language()
         lesson_native_language.click_on_option_russian_language()
         lesson_native_language.check_headbar_logo_is_displayed()
+
+    def test_russian_language_speech_and_language_lesson_learning_vocabulary_words_page(self, driver, login):
+        lesson_learning_vocabulary_words = SpeechAndLanguageLessonLearningVocabularyWordsPage(driver)
+        lesson_learning_vocabulary_words.open(UrlsSpeechAndLanguage.LEARNING_VOCABULARY_WORDS)
+        lesson_learning_vocabulary_words.click_on_first_letter_o()
+        lesson_learning_vocabulary_words.click_on_option_gorod()
+        lesson_learning_vocabulary_words.click_on_letter_g()
+        lesson_learning_vocabulary_words.click_on_letter_o()
+        lesson_learning_vocabulary_words.click_on_letter_r()
+        lesson_learning_vocabulary_words.click_on_letter_o()
+        lesson_learning_vocabulary_words.click_on_letter_d()
+        lesson_learning_vocabulary_words.click_on_button_done()
+        lesson_learning_vocabulary_words.check_headbar_logo_is_displayed()
+
 
 
 

@@ -45,3 +45,4 @@ class UrlsSpeechAndLanguage:
 
 class UrlsIGoingToSchool:
     DAY_KNOWLEDGE = f'{Urls.URL_MAIN_PAGE}''/exercise/player?back_path=%2Fprofile%2Fstudents%2Fstudy%2F6%2Flesson%2F5135&card_id=19444&congrat_path=%2Fprofile%2Fstudents%2Fcongrats%2Fcard%2F19444%3Fsubject_id%3D6&content_card_id=4360&options=progress_panel%2Canimated&subject_id=6'
+    GET_READY_FOR_SCHOOL = f'{Urls.URL_MAIN_PAGE}''/exercise/player?back_path=%2Fprofile%2Fstudents%2Fstudy%2F6%2Flesson%2F5135&card_id=19445&congrat_path=%2Fprofile%2Fstudents%2Fcongrats%2Fcard%2F19445%3Fsubject_id%3D6&content_card_id=4388&options=progress_panel%2Canimated&subject_id=6'

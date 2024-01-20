@@ -4,9 +4,9 @@ from pages.base_page import BasePage
 
 
 class SpeechAndLanguageLessonWhyIsSpeechNeededPage(BasePage):
-    BUTTON_ASK = (By.XPATH, '//span[text()="просят"]')
-    BUTTON_TELL = (By.XPATH, '//span[text()="рассказывают"]')
-    BUTTON_QUESTION = (By.XPATH, '//span[text()="спрашивают"]')
+    BUTTON_ASK = (By.XPATH, '//div[text()="просят"]')
+    BUTTON_TELL = (By.XPATH, '//div[text()="рассказывают"]')
+    BUTTON_QUESTION = (By.XPATH, '//div[text()="спрашивают"]')
     FIRST_CARD = (By.XPATH, '//div[@data-component-name="picBlockItem_0"]')
     SECOND_CARD = (By.XPATH, '//div[@data-component-name="picBlockItem_1"]')
     THIRD_CARD = (By.XPATH, '//div[@data-component-name="picBlockItem_2"]')

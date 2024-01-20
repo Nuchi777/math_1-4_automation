@@ -9,12 +9,12 @@ class SpeechAndLanguageLessonWhatShouldSpeechBeLikePage(BasePage):
     FIRST_CLICKABLE_CARD = (By.XPATH, '//div[@data-component-name="picBlockItem_0"]')
     FIRST_DRAGGABLE_CARD = (By.XPATH, '(//div[contains(@class, "SlotContainer")])[1]')
     DRAGGABLE_ITEM = (By.XPATH, '//div[contains(@class, "DraggableItem")]')
-    BUTTON_POLITELY = (By.XPATH, '//span[text()="вежливо"]')
-    BUTTON_ACCESSIBLY = (By.XPATH, '//span[text()="понятно"]')
-    BUTTON_CORRECTLY = (By.XPATH, '//span[text()="грамотно"]')
-    BUTTON_UNDERSTANDABLE = (By.XPATH, '//span[text()="понятной"]')
-    BUTTON_LITERATE = (By.XPATH, '//span[text()="грамотной"]')
-    BUTTON_POLITE = (By.XPATH, '//span[text()="вежливой"]')
+    BUTTON_POLITELY = (By.XPATH, '//div[text()="вежливо"]')
+    BUTTON_ACCESSIBLY = (By.XPATH, '//div[text()="понятно"]')
+    BUTTON_CORRECTLY = (By.XPATH, '//div[text()="грамотно"]')
+    BUTTON_UNDERSTANDABLE = (By.XPATH, '//div[text()="понятной"]')
+    BUTTON_LITERATE = (By.XPATH, '//div[text()="грамотной"]')
+    BUTTON_POLITE = (By.XPATH, '//div[text()="вежливой"]')
 
     def click_on_look_how_beautiful_their_puppy(self):
         self.element_is_visible(self.FIRST_CLICKABLE_CARD).click()

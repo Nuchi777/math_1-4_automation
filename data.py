@@ -1,10 +1,12 @@
 class Urls:
     URL_MAIN_PAGE = 'https://uchi.ru'
+    # https://58014.stage-uchi.ru
+    # https://uchi.ru
 
 
 class UserData:
     USER_LOGIN = '12'
-    USER_PASSWORD = 'фонтан34133'
+    USER_PASSWORD = 'танец32445'
 
 
 class UrlsCosmicAdventure:
@@ -39,3 +41,7 @@ class UrlsSpeechAndLanguage:
     WHAT_SHOULD_SPEECH_BE_LIKE = f'{Urls.URL_MAIN_PAGE}''/exercise/player?back_path=%2Fprofile%2Fstudents%2Fstudy%2F2%2Flesson%2F3203&card_id=13480&congrat_path=%2Fprofile%2Fstudents%2Fcongrats%2Fcard%2F13480%3Fsubject_id%3D2&content_card_id=3965&options=progress_panel%2Canimated&subject_id=2'
     NATIVE_LANGUAGE = f'{Urls.URL_MAIN_PAGE}''/exercise/player?back_path=%2Fprofile%2Fstudents%2Fstudy%2F2%2Flesson%2F3203&card_id=13481&congrat_path=%2Fprofile%2Fstudents%2Fcongrats%2Fcard%2F13481%3Fsubject_id%3D2&content_card_id=3966&options=progress_panel%2Canimated&subject_id=2'
     LEARNING_VOCABULARY_WORDS = f'{Urls.URL_MAIN_PAGE}''/exercise/player?back_path=%2Fprofile%2Fstudents%2Fstudy%2F2%2Flesson%2F3203&card_id=13482&congrat_path=%2Fprofile%2Fstudents%2Fcongrats%2Fdiplom%2F13482%3Fsubject_id%3D2%26topic_id%3D159%26grade%3D1%26&content_card_id=3967&options=progress_panel%2Canimated&subject_id=2'
+
+
+class UrlsIGoingToSchool:
+    DAY_KNOWLEDGE = f'{Urls.URL_MAIN_PAGE}''/exercise/player?back_path=%2Fprofile%2Fstudents%2Fstudy%2F6%2Flesson%2F5135&card_id=19444&congrat_path=%2Fprofile%2Fstudents%2Fcongrats%2Fcard%2F19444%3Fsubject_id%3D6&content_card_id=4360&options=progress_panel%2Canimated&subject_id=6'

@@ -1,8 +1,12 @@
+import time
+
 from data import UrlsWhatIsHomeland
+from pages.environment_world.what_is_homeland_lesson_homeland_page import WhatIsHomelandLessonHomelandPage
 from pages.environment_world.what_is_homeland_lesson_where_animals_live_page import \
     WhatIsHomelandLessonWhereAnimalsLivePage
 from pages.environment_world.what_is_homeland_lesson_where_does_person_live_page import \
     WhatIsHomelandLessonWhereDoesPersonLivePage
+from pages.environment_world.what_is_homeland_lesson_where_you_live_page import WhatIsHomelandLessonWhereYouLivePage
 
 
 class TestWhatIsHomeland:
@@ -23,3 +27,32 @@ class TestWhatIsHomeland:
         lesson_where_does_person_live.click_on_usa_button()
         lesson_where_does_person_live.click_on_word_homeland()
         lesson_where_does_person_live.check_headbar_logo_is_displayed()
+
+    def test_env_what_is_homeland_lesson_homeland(self, driver, login):
+        lesson_homeland = WhatIsHomelandLessonHomelandPage(driver)
+        lesson_homeland.open(UrlsWhatIsHomeland.HOMELAND)
+        lesson_homeland.click_on_city_card()
+        lesson_homeland.click_on_district_card()
+        lesson_homeland.click_on_village_card()
+        lesson_homeland.click_on_hamlet_card()
+        lesson_homeland.click_on_done_button()
+        lesson_homeland.click_on_word_city()
+        lesson_homeland.click_on_word_district()
+        lesson_homeland.click_on_word_village()
+        lesson_homeland.click_on_word_hamlet()
+        lesson_homeland.click_on_card_i_born_in_village_sukhovo()
+        lesson_homeland.click_on_card_i_born_in_omsk()
+        lesson_homeland.click_on_word_small_homeland()
+        lesson_homeland.click_on_word_homeland()
+        lesson_homeland.click_on_word_small_homeland()
+        lesson_homeland.click_on_word_homeland()
+        lesson_homeland.check_headbar_logo_is_displayed()
+
+    def test_env_what_is_homeland_lesson_where_you_live(self, driver, login):
+        lesson_where_you_live = WhatIsHomelandLessonWhereYouLivePage(driver)
+        lesson_where_you_live.open(UrlsWhatIsHomeland.WHERE_YOU_LIVE)
+        lesson_where_you_live.drag_any_item_to_city_area()
+        lesson_where_you_live.click_on_done_button()
+        lesson_where_you_live.check_headbar_logo_is_displayed()
+
+

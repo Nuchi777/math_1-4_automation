@@ -9,7 +9,7 @@ class FirstSecondThirdLessonWhoInWhichCarriagePage(BasePage):
     FIRST_CARRIAGE_CLICKABLE = (By.XPATH, '//div[@data-component-name="picBlockItem_1"]')
     FOURTH_CARRIAGE_CLICKABLE = (By.XPATH, '//div[@data-component-name="picBlockItem_4"]')
     ANIMALS = (By.XPATH, '//div[contains(@class, "DraggableItems")]')
-    ANIMAL_ACTIVE = (By.XPATH, '//div[contains(@class, "undefined active")]')
+    ANIMAL_ACTIVE = (By.XPATH, '//div[contains(@class, "active")]')
     FIRST_CARRIAGE_DROPPABLE = (By.XPATH, '(//div[contains(@class, "DropContainer")])[1]')
     SECOND_CARRIAGE_DROPPABLE = (By.XPATH, '(//div[contains(@class, "DropContainer")])[2]')
     THIRD_CARRIAGE_DROPPABLE = (By.XPATH, '(//div[contains(@class, "DropContainer")])[3]')

@@ -18,17 +18,17 @@ class IGoingToSchoolLessonDayKnowledgePage(BasePage):
 
 
     def drag_1_january_in_new_year_package(self):
-        self.element_is_visible(self.HOLIDAY_1_JANUARY)
+        self.element_is_clickable(self.HOLIDAY_1_JANUARY)
         self.drag_and_drop_on_to_element_new(self.HOLIDAY_1_JANUARY, self.THIRD_PACKAGE)
         self.element_is_invisible(self.HOLIDAY_1_JANUARY)
 
     def drag_9_may_in_victory_day_package(self):
-        self.element_is_visible(self.HOLIDAY_9_MAY)
+        self.element_is_clickable(self.HOLIDAY_9_MAY)
         self.drag_and_drop_on_to_element_new(self.HOLIDAY_9_MAY, self.FIRST_PACKAGE)
         self.element_is_invisible(self.HOLIDAY_9_MAY)
 
     def drag_1_september_in_day_of_knowledge_package(self):
-        self.element_is_visible(self.HOLIDAY_1_SEPTEMBER)
+        self.element_is_clickable(self.HOLIDAY_1_SEPTEMBER)
         self.drag_and_drop_on_to_element_new(self.HOLIDAY_1_SEPTEMBER, self.SECOND_PACKAGE)
         self.element_is_invisible(self.HOLIDAY_1_SEPTEMBER)
 

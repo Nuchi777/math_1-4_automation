@@ -52,3 +52,4 @@ class UrlsIGoingToSchool:
 
 class UrlsWhatIsHomeland:
     WHERE_ANIMALS_LIVE = f'{Urls.URL_MAIN_PAGE}''/exercise/player?back_path=%2Fprofile%2Fstudents%2Fstudy%2F6%2Flesson%2F5136&card_id=19448&congrat_path=%2Fprofile%2Fstudents%2Fcongrats%2Fcard%2F19448%3Fsubject_id%3D6&content_card_id=4390&options=progress_panel%2Canimated&subject_id=6'
+    WHERE_DOES_PERSON_LIVE = f'{Urls.URL_MAIN_PAGE}''/exercise/player?back_path=%2Fprofile%2Fstudents%2Fstudy%2F6%2Flesson%2F5136&card_id=19449&congrat_path=%2Fprofile%2Fstudents%2Fcongrats%2Fcard%2F19449%3Fsubject_id%3D6&content_card_id=4433&options=progress_panel%2Canimated&subject_id=6'

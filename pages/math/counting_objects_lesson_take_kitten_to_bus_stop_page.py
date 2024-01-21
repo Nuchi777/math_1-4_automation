@@ -25,36 +25,36 @@ class CountingObjectsLessonTakeKittenToBusStopPage(BasePage):
 
 
     def click_on_button_key_1_fill_input_1(self):
-        self.element_is_visible(self.INPUT)
-        self.element_is_visible(self.BUTTON_KEY_1).click()
+        self.element_is_clickable(self.INPUT)
+        self.element_is_clickable(self.BUTTON_KEY_1).click()
 
     def click_on_button_key_2_fill_input_2(self):
-        self.element_is_visible(self.INPUT)
-        self.element_is_visible(self.BUTTON_KEY_2).click()
+        self.element_is_clickable(self.INPUT)
+        self.element_is_clickable(self.BUTTON_KEY_2).click()
 
     def click_on_button_key_3_fill_input_3(self):
-        self.element_is_visible(self.INPUT)
-        self.element_is_visible(self.BUTTON_KEY_3).click()
+        self.element_is_clickable(self.INPUT)
+        self.element_is_clickable(self.BUTTON_KEY_3).click()
 
     def click_on_button_key_4_fill_input_4(self):
-        self.element_is_visible(self.INPUT)
-        self.element_is_visible(self.BUTTON_KEY_4).click()
+        self.element_is_clickable(self.INPUT)
+        self.element_is_clickable(self.BUTTON_KEY_4).click()
 
     def click_on_button_key_5_fill_input_5(self):
-        self.element_is_visible(self.INPUT)
-        self.element_is_visible(self.BUTTON_KEY_5).click()
+        self.element_is_clickable(self.INPUT)
+        self.element_is_clickable(self.BUTTON_KEY_5).click()
 
     def click_on_button_key_6_fill_input_6(self):
-        self.element_is_visible(self.INPUT)
-        self.element_is_visible(self.BUTTON_KEY_6).click()
+        self.element_is_clickable(self.INPUT)
+        self.element_is_clickable(self.BUTTON_KEY_6).click()
 
     def click_on_button_key_7_fill_input_7(self):
-        self.element_is_visible(self.INPUT)
-        self.element_is_visible(self.BUTTON_KEY_7).click()
+        self.element_is_clickable(self.INPUT)
+        self.element_is_clickable(self.BUTTON_KEY_7).click()
 
     def click_on_button_key_8_fill_input_8(self):
-        self.element_is_visible(self.INPUT)
-        self.element_is_visible(self.BUTTON_KEY_8).click()
+        self.element_is_clickable(self.INPUT)
+        self.element_is_clickable(self.BUTTON_KEY_8).click()
 
     def click_on_house_1(self):
         self.element_is_visible(self.HOUSE_1).click()

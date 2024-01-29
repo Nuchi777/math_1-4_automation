@@ -1,15 +1,15 @@
 import time
 
 from data import UrlsSpeechAndLanguage
-from pages.russian_language.speech_and_language_lesson_learning_vocabulary_words_page import \
+from pages.rus.speech_and_language_lesson_learning_vocabulary_words_page import \
     SpeechAndLanguageLessonLearningVocabularyWordsPage
-from pages.russian_language.speech_and_language_lesson_native_language_page import \
+from pages.rus.speech_and_language_lesson_native_language_page import \
     SpeechAndLanguageLessonNativeLanguagePage
-from pages.russian_language.speech_and_language_lesson_what_is_speech_page import \
+from pages.rus.speech_and_language_lesson_what_is_speech_page import \
     SpeechAndLanguageLessonWhatIsSpeechPage
-from pages.russian_language.speech_and_language_lesson_what_should_speech_be_like_page import \
+from pages.rus.speech_and_language_lesson_what_should_speech_be_like_page import \
     SpeechAndLanguageLessonWhatShouldSpeechBeLikePage
-from pages.russian_language.speech_and_language_lesson_why_is_speech_needed_page import \
+from pages.rus.speech_and_language_lesson_why_is_speech_needed_page import \
     SpeechAndLanguageLessonWhyIsSpeechNeededPage
 
 

@@ -6,7 +6,6 @@ from pages.base_page import BasePage
 
 
 class NumberLineAndNumberAxisLessonAcquaintedWithNumberAxisPage(BasePage):
-    ZAVRIK = (By.XPATH, '//div[contains(@class,"AxisImage")]')
     BUTTON_RIGHT = (By.XPATH, '//div[@data-value="+1"]')
     BUTTON_DONE = (By.XPATH, '//div[@data-value="Enter"]')
     INPUT = (By.XPATH, '//div[contains(@class, "focused")]')
@@ -66,56 +65,56 @@ class NumberLineAndNumberAxisLessonAcquaintedWithNumberAxisPage(BasePage):
         self.element_is_invisible(self.INPUT)
 
     def move_zavrik_to_point_4(self):
-        count = 0
-        while count != 3:
-            self.element_is_clickable(self.BUTTON_RIGHT).click()
-            count += 1
-        self.element_is_clickable(self.BUTTON_DONE).click()
-        self.element_is_invisible(self.BUTTON_DONE)
-
-    def move_zavrik_to_point_6(self):
-        count = 0
-        while count != 5:
-            self.element_is_clickable(self.BUTTON_RIGHT).click()
-            count += 1
-        self.element_is_clickable(self.BUTTON_DONE).click()
-        self.element_is_invisible(self.BUTTON_DONE)
-
-    def move_zavrik_to_point_8(self):
-        count = 0
-        while count != 7:
-            self.element_is_clickable(self.BUTTON_RIGHT).click()
-            count += 1
-        self.element_is_clickable(self.BUTTON_DONE).click()
-        self.element_is_invisible(self.BUTTON_DONE)
-
-    def move_zavrik_to_point_3(self):
-        count = 0
-        while count != 2:
-            self.element_is_clickable(self.BUTTON_RIGHT).click()
-            count += 1
-        self.element_is_clickable(self.BUTTON_DONE).click()
-        self.element_is_invisible(self.BUTTON_DONE)
-
-    def move_zavrik_to_point_7(self):
-        count = 0
-        while count != 6:
-            self.element_is_clickable(self.BUTTON_RIGHT).click()
-            count += 1
-        self.element_is_clickable(self.BUTTON_DONE).click()
-        self.element_is_invisible(self.BUTTON_DONE)
-
-    def move_zavrik_to_point_5(self):
-        count = 0
+        count = 1
         while count != 4:
             self.element_is_clickable(self.BUTTON_RIGHT).click()
             count += 1
         self.element_is_clickable(self.BUTTON_DONE).click()
         self.element_is_invisible(self.BUTTON_DONE)
 
-    def move_zavrik_to_point_9(self):
-        count = 0
+    def move_zavrik_to_point_6(self):
+        count = 1
+        while count != 6:
+            self.element_is_clickable(self.BUTTON_RIGHT).click()
+            count += 1
+        self.element_is_clickable(self.BUTTON_DONE).click()
+        self.element_is_invisible(self.BUTTON_DONE)
+
+    def move_zavrik_to_point_8(self):
+        count = 1
         while count != 8:
+            self.element_is_clickable(self.BUTTON_RIGHT).click()
+            count += 1
+        self.element_is_clickable(self.BUTTON_DONE).click()
+        self.element_is_invisible(self.BUTTON_DONE)
+
+    def move_zavrik_to_point_3(self):
+        count = 1
+        while count != 3:
+            self.element_is_clickable(self.BUTTON_RIGHT).click()
+            count += 1
+        self.element_is_clickable(self.BUTTON_DONE).click()
+        self.element_is_invisible(self.BUTTON_DONE)
+
+    def move_zavrik_to_point_7(self):
+        count = 1
+        while count != 7:
+            self.element_is_clickable(self.BUTTON_RIGHT).click()
+            count += 1
+        self.element_is_clickable(self.BUTTON_DONE).click()
+        self.element_is_invisible(self.BUTTON_DONE)
+
+    def move_zavrik_to_point_5(self):
+        count = 1
+        while count != 5:
+            self.element_is_clickable(self.BUTTON_RIGHT).click()
+            count += 1
+        self.element_is_clickable(self.BUTTON_DONE).click()
+        self.element_is_invisible(self.BUTTON_DONE)
+
+    def move_zavrik_to_point_9(self):
+        count = 1
+        while count != 9:
             self.element_is_clickable(self.BUTTON_RIGHT).click()
             count += 1
         self.element_is_clickable(self.BUTTON_DONE).click()

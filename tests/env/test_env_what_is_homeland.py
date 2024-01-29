@@ -1,15 +1,15 @@
 import time
 
 from data import UrlsWhatIsHomeland
-from pages.environment_world.what_is_homeland_lesson_homeland_page import WhatIsHomelandLessonHomelandPage
-from pages.environment_world.what_is_homeland_lesson_where_animals_live_page import \
+from pages.env.what_is_homeland_lesson_homeland_page import WhatIsHomelandLessonHomelandPage
+from pages.env.what_is_homeland_lesson_where_animals_live_page import \
     WhatIsHomelandLessonWhereAnimalsLivePage
-from pages.environment_world.what_is_homeland_lesson_where_does_person_live_page import \
+from pages.env.what_is_homeland_lesson_where_does_person_live_page import \
     WhatIsHomelandLessonWhereDoesPersonLivePage
-from pages.environment_world.what_is_homeland_lesson_where_you_live_page import WhatIsHomelandLessonWhereYouLivePage
+from pages.env.what_is_homeland_lesson_where_you_live_page import WhatIsHomelandLessonWhereYouLivePage
 
 
-class TestWhatIsHomeland:
+class TestEnvWhatIsHomeland:
 
     def test_env_what_is_homeland_lesson_where_animals_live(self, driver, login):
         lesson_where_animals_live = WhatIsHomelandLessonWhereAnimalsLivePage(driver)

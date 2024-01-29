@@ -1,12 +1,12 @@
 import time
 
-from pages.environment_world.i_going_to_school_lesson_daily_regime_schoolkid_page import \
+from pages.env.i_going_to_school_lesson_daily_regime_schoolkid_page import \
     IGoingToSchoolLessonDailyRegimeSchoolkidPage
-from pages.environment_world.i_going_to_school_lesson_day_knowledge_page import IGoingToSchoolLessonDayKnowledgePage
+from pages.env.i_going_to_school_lesson_day_knowledge_page import IGoingToSchoolLessonDayKnowledgePage
 from data import UrlsIGoingToSchool
-from pages.environment_world.i_going_to_school_lesson_get_ready_for_school_page import \
+from pages.env.i_going_to_school_lesson_get_ready_for_school_page import \
     IGoingToSchoolLessonGetReadyForSchoolPage
-from pages.environment_world.i_going_to_school_lesson_my_school_page import IGoingToSchoolLessonMySchoolPage
+from pages.env.i_going_to_school_lesson_my_school_page import IGoingToSchoolLessonMySchoolPage
 
 
 class TestEnvIGoingToSchool:

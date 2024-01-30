@@ -1,12 +1,12 @@
 class Urls:
-    URL_MAIN_PAGE = 'https://uchi.ru'
+    URL_MAIN_PAGE = 'https://58014.stage-uchi.ru'
     # https://58014.stage-uchi.ru
     # https://uchi.ru
 
 
 class UserData:
-    USER_LOGIN = '12'
-    USER_PASSWORD = 'танец32445'
+    USER_LOGIN = '64'
+    USER_PASSWORD = 'железо10060'
 
 
 class UrlsCosmicAdventure:

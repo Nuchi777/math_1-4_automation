@@ -15,7 +15,7 @@ from pages.rus.speech_and_language_lesson_why_is_speech_needed_page import \
 
 class TestSpeechAndLanguage:
 
-    def test_russian_language_speech_and_language_lesson_what_is_speech_page(self, driver, login):
+    def test_rus_speech_and_language_lesson_what_is_speech_page(self, driver, login):
         lesson_what_is_speech = SpeechAndLanguageLessonWhatIsSpeechPage(driver)
         lesson_what_is_speech.open(UrlsSpeechAndLanguage.WHAT_IS_SPEECH)
         lesson_what_is_speech.drag_cat_in_package_meows()
@@ -28,7 +28,7 @@ class TestSpeechAndLanguage:
         lesson_what_is_speech.click_on_button_humans()
         lesson_what_is_speech.check_headbar_logo_is_displayed()
 
-    def test_russian_language_speech_and_language_lesson_why_is_speech_needed_page(self, driver, login):
+    def test_rus_speech_and_language_lesson_why_is_speech_needed_page(self, driver, login):
         lesson_why_is_speech_needed = SpeechAndLanguageLessonWhyIsSpeechNeededPage(driver)
         lesson_why_is_speech_needed.open(UrlsSpeechAndLanguage.WHY_IS_SPEECH_NEEDED)
         lesson_why_is_speech_needed.click_on_button_question()
@@ -42,7 +42,7 @@ class TestSpeechAndLanguage:
         lesson_why_is_speech_needed.click_on_second_card()
         lesson_why_is_speech_needed.check_headbar_logo_is_displayed()
 
-    def test_russian_language_speech_and_language_lesson_what_should_speech_be_like_page(self, driver, login):
+    def test_rus_speech_and_language_lesson_what_should_speech_be_like_page(self, driver, login):
         lesson_what_should_speech_be_like = SpeechAndLanguageLessonWhatShouldSpeechBeLikePage(driver)
         lesson_what_should_speech_be_like.open(UrlsSpeechAndLanguage.WHAT_SHOULD_SPEECH_BE_LIKE)
         lesson_what_should_speech_be_like.click_on_look_how_beautiful_their_puppy()
@@ -59,7 +59,7 @@ class TestSpeechAndLanguage:
         lesson_what_should_speech_be_like.click_on_button_polite()
         lesson_what_should_speech_be_like.check_headbar_logo_is_displayed()
 
-    def test_russian_language_speech_and_language_lesson_native_language_page(self, driver, login):
+    def test_rus_speech_and_language_lesson_native_language_page(self, driver, login):
         lesson_native_language = SpeechAndLanguageLessonNativeLanguagePage(driver)
         lesson_native_language.open(UrlsSpeechAndLanguage.NATIVE_LANGUAGE)
         lesson_native_language.click_on_first_photo_kalmykia()
@@ -74,7 +74,7 @@ class TestSpeechAndLanguage:
         lesson_native_language.click_on_option_russian_language()
         lesson_native_language.check_headbar_logo_is_displayed()
 
-    def test_russian_language_speech_and_language_lesson_learning_vocabulary_words_page(self, driver, login):
+    def test_rus_speech_and_language_lesson_learning_vocabulary_words_page(self, driver, login):
         lesson_learning_vocabulary_words = SpeechAndLanguageLessonLearningVocabularyWordsPage(driver)
         lesson_learning_vocabulary_words.open(UrlsSpeechAndLanguage.LEARNING_VOCABULARY_WORDS)
         lesson_learning_vocabulary_words.click_on_first_letter_o()
